@@ -16,5 +16,10 @@ namespace P.I_1
         {
             InitializeComponent();
         }
+
+        private void picBoxExit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

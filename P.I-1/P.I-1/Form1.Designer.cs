@@ -48,6 +48,7 @@
             this.picBoxExit.Size = new System.Drawing.Size(32, 32);
             this.picBoxExit.TabIndex = 0;
             this.picBoxExit.TabStop = false;
+            this.picBoxExit.Click += new System.EventHandler(this.picBoxExit_Click);
             // 
             // picBoxMinimizar
             // 
@@ -69,7 +70,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(-15, -15);
+            this.textBox1.Location = new System.Drawing.Point(352, 138);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
