@@ -21,5 +21,11 @@ namespace P.I_1
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void picBoxMinimizar_Click(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

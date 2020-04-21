@@ -32,7 +32,6 @@
             this.picBoxExit = new System.Windows.Forms.PictureBox();
             this.picBoxMinimizar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,7 +42,7 @@
             // picBoxExit
             // 
             this.picBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("picBoxExit.Image")));
-            this.picBoxExit.Location = new System.Drawing.Point(768, 0);
+            this.picBoxExit.Location = new System.Drawing.Point(726, 12);
             this.picBoxExit.Name = "picBoxExit";
             this.picBoxExit.Size = new System.Drawing.Size(32, 32);
             this.picBoxExit.TabIndex = 0;
@@ -53,11 +52,12 @@
             // picBoxMinimizar
             // 
             this.picBoxMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMinimizar.Image")));
-            this.picBoxMinimizar.Location = new System.Drawing.Point(700, 0);
+            this.picBoxMinimizar.Location = new System.Drawing.Point(688, 12);
             this.picBoxMinimizar.Name = "picBoxMinimizar";
             this.picBoxMinimizar.Size = new System.Drawing.Size(32, 32);
             this.picBoxMinimizar.TabIndex = 1;
             this.picBoxMinimizar.TabStop = false;
+            this.picBoxMinimizar.Click += new System.EventHandler(this.picBoxMinimizar_Click);
             // 
             // label1
             // 
@@ -67,13 +67,6 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(352, 138);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
             // 
             // label2
             // 
@@ -106,7 +99,6 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picBoxMinimizar);
             this.Controls.Add(this.picBoxExit);
@@ -125,7 +117,6 @@
         private System.Windows.Forms.PictureBox picBoxExit;
         private System.Windows.Forms.PictureBox picBoxMinimizar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
