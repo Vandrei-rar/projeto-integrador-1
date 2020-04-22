@@ -29,40 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.picBoxExit = new System.Windows.Forms.PictureBox();
             this.picBoxMinimizar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNumpeca = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbRoupa = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlModo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.picAcc = new System.Windows.Forms.PictureBox();
+            this.picReset = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimizar)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.pnlModo.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,29 +68,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAcc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picBoxExit
-            // 
-            this.picBoxExit.BackColor = System.Drawing.Color.Transparent;
-            this.picBoxExit.Image = ((System.Drawing.Image)(resources.GetObject("picBoxExit.Image")));
-            this.picBoxExit.Location = new System.Drawing.Point(769, -1);
-            this.picBoxExit.Name = "picBoxExit";
-            this.picBoxExit.Size = new System.Drawing.Size(32, 32);
-            this.picBoxExit.TabIndex = 0;
-            this.picBoxExit.TabStop = false;
-            this.picBoxExit.Click += new System.EventHandler(this.picBoxExit_Click);
             // 
             // picBoxMinimizar
             // 
             this.picBoxMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.picBoxMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("picBoxMinimizar.Image")));
-            this.picBoxMinimizar.Location = new System.Drawing.Point(719, -1);
+            this.picBoxMinimizar.Location = new System.Drawing.Point(728, 12);
             this.picBoxMinimizar.Name = "picBoxMinimizar";
-            this.picBoxMinimizar.Size = new System.Drawing.Size(32, 32);
+            this.picBoxMinimizar.Size = new System.Drawing.Size(24, 24);
+            this.picBoxMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBoxMinimizar.TabIndex = 1;
             this.picBoxMinimizar.TabStop = false;
             this.picBoxMinimizar.Click += new System.EventHandler(this.picBoxMinimizar_Click);
@@ -108,13 +97,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Número de peças:";
             // 
-            // textBox2
+            // txtNumpeca
             // 
-            this.textBox2.Location = new System.Drawing.Point(227, 146);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 4;
+            this.txtNumpeca.Location = new System.Drawing.Point(227, 146);
+            this.txtNumpeca.Multiline = true;
+            this.txtNumpeca.Name = "txtNumpeca";
+            this.txtNumpeca.Size = new System.Drawing.Size(100, 20);
+            this.txtNumpeca.TabIndex = 4;
             // 
             // label3
             // 
@@ -143,7 +132,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(224, 284);
+            this.label4.Location = new System.Drawing.Point(214, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 15);
             this.label4.TabIndex = 9;
@@ -161,24 +150,24 @@
             this.label5.Text = "Enxague Duplo:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // comboBox1
+            // cmbRoupa
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbRoupa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRoupa.FormattingEnabled = true;
+            this.cmbRoupa.Items.AddRange(new object[] {
             "Muito Suja(s)",
             "Suja(s)",
             "Pouco Suja(s)"});
-            this.comboBox1.Location = new System.Drawing.Point(227, 248);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cmbRoupa.Location = new System.Drawing.Point(227, 248);
+            this.cmbRoupa.Name = "cmbRoupa";
+            this.cmbRoupa.Size = new System.Drawing.Size(100, 21);
+            this.cmbRoupa.TabIndex = 12;
             // 
-            // comboBox2
+            // cmbTipo
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
             "Calça Jeans",
             "Camisetas",
             "Shorts",
@@ -188,10 +177,10 @@
             "Calcinha(s) / Cueca(s)",
             "Camisa Comuns",
             "Cama, Banho"});
-            this.comboBox2.Location = new System.Drawing.Point(227, 195);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 13;
+            this.cmbTipo.Location = new System.Drawing.Point(227, 195);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(100, 21);
+            this.cmbTipo.TabIndex = 13;
             // 
             // radioButton1
             // 
@@ -229,16 +218,17 @@
             this.radioButton3.Text = "Nenhum(a)";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // pnlModo
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Location = new System.Drawing.Point(227, 309);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(137, 69);
-            this.panel1.TabIndex = 17;
+            this.pnlModo.BackColor = System.Drawing.Color.Transparent;
+            this.pnlModo.Controls.Add(this.radioButton1);
+            this.pnlModo.Controls.Add(this.radioButton3);
+            this.pnlModo.Controls.Add(this.radioButton2);
+            this.pnlModo.Location = new System.Drawing.Point(214, 302);
+            this.pnlModo.Name = "pnlModo";
+            this.pnlModo.Size = new System.Drawing.Size(137, 69);
+            this.pnlModo.TabIndex = 17;
+            this.pnlModo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -249,29 +239,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(112, 26);
             this.panel2.TabIndex = 18;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.radioButton8);
-            this.panel3.Controls.Add(this.radioButton7);
-            this.panel3.Controls.Add(this.radioButton6);
-            this.panel3.Location = new System.Drawing.Point(417, 214);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(138, 72);
-            this.panel3.TabIndex = 19;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(3, 3);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(46, 18);
-            this.radioButton4.TabIndex = 20;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Sim";
-            this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
@@ -286,28 +253,40 @@
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
-            // label7
+            // radioButton4
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(411, 198);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 15);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Modo de Execução:";
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(3, 3);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(46, 18);
+            this.radioButton4.TabIndex = 20;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Sim";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // panel3
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(3, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(114, 18);
-            this.radioButton6.TabIndex = 22;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Lavagem Rápida";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.radioButton8);
+            this.panel3.Controls.Add(this.radioButton7);
+            this.panel3.Controls.Add(this.radioButton6);
+            this.panel3.Location = new System.Drawing.Point(414, 213);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(138, 72);
+            this.panel3.TabIndex = 19;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton8.Location = new System.Drawing.Point(3, 49);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(116, 18);
+            this.radioButton8.TabIndex = 24;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Lavagem Padrão";
+            this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // radioButton7
             // 
@@ -321,17 +300,28 @@
             this.radioButton7.Text = "Lavagem Ecônomica";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // radioButton6
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(3, 49);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(116, 18);
-            this.radioButton8.TabIndex = 24;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Lavagem Padrão";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton6.Location = new System.Drawing.Point(3, 3);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(114, 18);
+            this.radioButton6.TabIndex = 22;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Lavagem Rápida";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(408, 197);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 15);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Modo de Execução:";
             // 
             // pictureBox1
             // 
@@ -394,35 +384,42 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Olá, Bem-Vindo!! ";
             // 
-            // pictureBox6
+            // picAcc
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(702, 347);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox6.TabIndex = 27;
-            this.pictureBox6.TabStop = false;
+            this.picAcc.BackColor = System.Drawing.Color.Transparent;
+            this.picAcc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAcc.Image = ((System.Drawing.Image)(resources.GetObject("picAcc.Image")));
+            this.picAcc.Location = new System.Drawing.Point(588, 347);
+            this.picAcc.Name = "picAcc";
+            this.picAcc.Size = new System.Drawing.Size(64, 64);
+            this.picAcc.TabIndex = 27;
+            this.picAcc.TabStop = false;
+            this.picAcc.Click += new System.EventHandler(this.picAcc_Click);
             // 
-            // pictureBox7
+            // picReset
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(594, 347);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox7.TabIndex = 28;
-            this.pictureBox7.TabStop = false;
+            this.picReset.BackColor = System.Drawing.Color.Transparent;
+            this.picReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picReset.Image = global::P.I_1.Properties.Resources.refresh_yellow;
+            this.picReset.Location = new System.Drawing.Point(491, 347);
+            this.picReset.Name = "picReset";
+            this.picReset.Size = new System.Drawing.Size(64, 64);
+            this.picReset.TabIndex = 28;
+            this.picReset.TabStop = false;
+            this.picReset.Click += new System.EventHandler(this.picReset_Click);
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(482, 347);
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = global::P.I_1.Properties.Resources.cruz;
+            this.pictureBox8.Location = new System.Drawing.Point(764, 12);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 29;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.picX_Click);
             // 
             // Form1
             // 
@@ -431,8 +428,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.picReset);
+            this.Controls.Add(this.picAcc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -442,25 +439,24 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.pnlModo);
+            this.Controls.Add(this.cmbTipo);
+            this.Controls.Add(this.cmbRoupa);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNumpeca);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picBoxMinimizar);
-            this.Controls.Add(this.picBoxExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxExit)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimizar)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlModo.ResumeLayout(false);
+            this.pnlModo.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -470,8 +466,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAcc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -479,21 +475,19 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picBoxExit;
         private System.Windows.Forms.PictureBox picBoxMinimizar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNumpeca;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbRoupa;
+        private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlModo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton4;
@@ -508,8 +502,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox picAcc;
+        private System.Windows.Forms.PictureBox picReset;
         private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

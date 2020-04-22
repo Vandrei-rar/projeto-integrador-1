@@ -17,11 +17,6 @@ namespace P.I_1
             InitializeComponent();
         }
 
-        private void picBoxExit_Click(object sender, EventArgs e)
-        {
-            System.Windows.Forms.Application.Exit();
-        }
-
         private void picBoxMinimizar_Click(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.None;
@@ -34,6 +29,35 @@ namespace P.I_1
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picX_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picReset_Click(object sender, EventArgs e)
+        {
+
+            txtNumpeca.ResetText();
+            cmbTipo.SelectedIndex = -1;
+            cmbRoupa.SelectedIndex = -1;
+
+        }
+
+        private void picAcc_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Cálculo realizado", "Confirmação");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
