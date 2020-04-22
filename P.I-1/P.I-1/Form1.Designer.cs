@@ -38,17 +38,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.cmbRoupa = new System.Windows.Forms.ComboBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rdbCama = new System.Windows.Forms.RadioButton();
+            this.rdbPanos = new System.Windows.Forms.RadioButton();
+            this.rdbNenhum = new System.Windows.Forms.RadioButton();
             this.pnlModo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rdbNao = new System.Windows.Forms.RadioButton();
+            this.rdbSim = new System.Windows.Forms.RadioButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.rdbPadrao = new System.Windows.Forms.RadioButton();
+            this.rdbEconomica = new System.Windows.Forms.RadioButton();
+            this.rdbRapida = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -182,48 +182,48 @@
             this.cmbTipo.Size = new System.Drawing.Size(100, 21);
             this.cmbTipo.TabIndex = 13;
             // 
-            // radioButton1
+            // rdbCama
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 18);
-            this.radioButton1.TabIndex = 14;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Cama e Banho";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbCama.AutoSize = true;
+            this.rdbCama.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbCama.Location = new System.Drawing.Point(3, 3);
+            this.rdbCama.Name = "rdbCama";
+            this.rdbCama.Size = new System.Drawing.Size(103, 18);
+            this.rdbCama.TabIndex = 14;
+            this.rdbCama.TabStop = true;
+            this.rdbCama.Text = "Cama e Banho";
+            this.rdbCama.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbPanos
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(3, 26);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(126, 18);
-            this.radioButton2.TabIndex = 15;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Panos de Limpeza";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbPanos.AutoSize = true;
+            this.rdbPanos.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbPanos.Location = new System.Drawing.Point(3, 26);
+            this.rdbPanos.Name = "rdbPanos";
+            this.rdbPanos.Size = new System.Drawing.Size(126, 18);
+            this.rdbPanos.TabIndex = 15;
+            this.rdbPanos.TabStop = true;
+            this.rdbPanos.Text = "Panos de Limpeza";
+            this.rdbPanos.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdbNenhum
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(3, 49);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 18);
-            this.radioButton3.TabIndex = 16;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Nenhum(a)";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbNenhum.AutoSize = true;
+            this.rdbNenhum.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNenhum.Location = new System.Drawing.Point(3, 49);
+            this.rdbNenhum.Name = "rdbNenhum";
+            this.rdbNenhum.Size = new System.Drawing.Size(85, 18);
+            this.rdbNenhum.TabIndex = 16;
+            this.rdbNenhum.TabStop = true;
+            this.rdbNenhum.Text = "Nenhum(a)";
+            this.rdbNenhum.UseVisualStyleBackColor = true;
             // 
             // pnlModo
             // 
             this.pnlModo.BackColor = System.Drawing.Color.Transparent;
-            this.pnlModo.Controls.Add(this.radioButton1);
-            this.pnlModo.Controls.Add(this.radioButton3);
-            this.pnlModo.Controls.Add(this.radioButton2);
+            this.pnlModo.Controls.Add(this.rdbCama);
+            this.pnlModo.Controls.Add(this.rdbNenhum);
+            this.pnlModo.Controls.Add(this.rdbPanos);
             this.pnlModo.Location = new System.Drawing.Point(214, 302);
             this.pnlModo.Name = "pnlModo";
             this.pnlModo.Size = new System.Drawing.Size(137, 69);
@@ -233,84 +233,84 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.radioButton5);
-            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Controls.Add(this.rdbNao);
+            this.panel2.Controls.Add(this.rdbSim);
             this.panel2.Location = new System.Drawing.Point(414, 146);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(112, 26);
             this.panel2.TabIndex = 18;
             // 
-            // radioButton5
+            // rdbNao
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(62, 3);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(45, 18);
-            this.radioButton5.TabIndex = 21;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Não";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            this.rdbNao.AutoSize = true;
+            this.rdbNao.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbNao.Location = new System.Drawing.Point(62, 3);
+            this.rdbNao.Name = "rdbNao";
+            this.rdbNao.Size = new System.Drawing.Size(45, 18);
+            this.rdbNao.TabIndex = 21;
+            this.rdbNao.TabStop = true;
+            this.rdbNao.Text = "Não";
+            this.rdbNao.UseVisualStyleBackColor = true;
+            this.rdbNao.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
-            // radioButton4
+            // rdbSim
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(3, 3);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(46, 18);
-            this.radioButton4.TabIndex = 20;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Sim";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdbSim.AutoSize = true;
+            this.rdbSim.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbSim.Location = new System.Drawing.Point(3, 3);
+            this.rdbSim.Name = "rdbSim";
+            this.rdbSim.Size = new System.Drawing.Size(46, 18);
+            this.rdbSim.TabIndex = 20;
+            this.rdbSim.TabStop = true;
+            this.rdbSim.Text = "Sim";
+            this.rdbSim.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.radioButton8);
-            this.panel3.Controls.Add(this.radioButton7);
-            this.panel3.Controls.Add(this.radioButton6);
+            this.panel3.Controls.Add(this.rdbPadrao);
+            this.panel3.Controls.Add(this.rdbEconomica);
+            this.panel3.Controls.Add(this.rdbRapida);
             this.panel3.Location = new System.Drawing.Point(414, 213);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(138, 72);
             this.panel3.TabIndex = 19;
             // 
-            // radioButton8
+            // rdbPadrao
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(3, 49);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(116, 18);
-            this.radioButton8.TabIndex = 24;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Lavagem Padrão";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rdbPadrao.AutoSize = true;
+            this.rdbPadrao.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbPadrao.Location = new System.Drawing.Point(3, 49);
+            this.rdbPadrao.Name = "rdbPadrao";
+            this.rdbPadrao.Size = new System.Drawing.Size(116, 18);
+            this.rdbPadrao.TabIndex = 24;
+            this.rdbPadrao.TabStop = true;
+            this.rdbPadrao.Text = "Lavagem Padrão";
+            this.rdbPadrao.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rdbEconomica
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(3, 26);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(137, 18);
-            this.radioButton7.TabIndex = 23;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Lavagem Ecônomica";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rdbEconomica.AutoSize = true;
+            this.rdbEconomica.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEconomica.Location = new System.Drawing.Point(3, 26);
+            this.rdbEconomica.Name = "rdbEconomica";
+            this.rdbEconomica.Size = new System.Drawing.Size(137, 18);
+            this.rdbEconomica.TabIndex = 23;
+            this.rdbEconomica.TabStop = true;
+            this.rdbEconomica.Text = "Lavagem Ecônomica";
+            this.rdbEconomica.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdbRapida
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(3, 3);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(114, 18);
-            this.radioButton6.TabIndex = 22;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Lavagem Rápida";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdbRapida.AutoSize = true;
+            this.rdbRapida.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbRapida.Location = new System.Drawing.Point(3, 3);
+            this.rdbRapida.Name = "rdbRapida";
+            this.rdbRapida.Size = new System.Drawing.Size(114, 18);
+            this.rdbRapida.TabIndex = 22;
+            this.rdbRapida.TabStop = true;
+            this.rdbRapida.Text = "Lavagem Rápida";
+            this.rdbRapida.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -389,7 +389,7 @@
             this.picAcc.BackColor = System.Drawing.Color.Transparent;
             this.picAcc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picAcc.Image = ((System.Drawing.Image)(resources.GetObject("picAcc.Image")));
-            this.picAcc.Location = new System.Drawing.Point(588, 347);
+            this.picAcc.Location = new System.Drawing.Point(490, 307);
             this.picAcc.Name = "picAcc";
             this.picAcc.Size = new System.Drawing.Size(64, 64);
             this.picAcc.TabIndex = 27;
@@ -401,7 +401,7 @@
             this.picReset.BackColor = System.Drawing.Color.Transparent;
             this.picReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picReset.Image = global::P.I_1.Properties.Resources.refresh_yellow;
-            this.picReset.Location = new System.Drawing.Point(491, 347);
+            this.picReset.Location = new System.Drawing.Point(414, 307);
             this.picReset.Name = "picReset";
             this.picReset.Size = new System.Drawing.Size(64, 64);
             this.picReset.TabIndex = 28;
@@ -484,17 +484,17 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbRoupa;
         private System.Windows.Forms.ComboBox cmbTipo;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rdbCama;
+        private System.Windows.Forms.RadioButton rdbPanos;
+        private System.Windows.Forms.RadioButton rdbNenhum;
         private System.Windows.Forms.Panel pnlModo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rdbNao;
+        private System.Windows.Forms.RadioButton rdbSim;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton rdbPadrao;
+        private System.Windows.Forms.RadioButton rdbEconomica;
+        private System.Windows.Forms.RadioButton rdbRapida;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
