@@ -17,7 +17,23 @@ namespace P.I_1
             InitializeComponent();
         }
 
-        private void picBoxExit_Click(object sender, EventArgs e)
+        private void picBoxMinimizar_Click(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picX_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
@@ -41,6 +57,7 @@ namespace P.I_1
             rdbRapida.Checked = false;
             rdbEconomica.Checked = false;
             rdbPadrao.Checked = false;
+
 
         }
 
