@@ -58,15 +58,23 @@ namespace P.I_1
             rdbEconomica.Checked = false;
             rdbPadrao.Checked = false;
 
-            
-
-            
 
         }
 
         private void picAcc_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Cálculo realizado", "Confirmação");
+            txtNumpeca.ResetText();
+            cmbTipo.SelectedIndex = -1;
+            cmbRoupa.SelectedIndex = -1;
+            rdbCama.Checked = false;
+            rdbPanos.Checked = false;
+            rdbNenhum.Checked = false;
+            rdbSim.Checked = false;
+            rdbNao.Checked = false;
+            rdbRapida.Checked = false;
+            rdbEconomica.Checked = false;
+            rdbPadrao.Checked = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
