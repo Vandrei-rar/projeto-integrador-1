@@ -58,28 +58,109 @@ namespace P.I_1
             rdbEconomica.Checked = false;
             rdbPadrao.Checked = false;
 
-
         }
 
         private void picAcc_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Cálculo realizado", "Confirmação");
-            txtNumpeca.ResetText();
-            cmbTipo.SelectedIndex = -1;
-            cmbRoupa.SelectedIndex = -1;
-            rdbCama.Checked = false;
-            rdbPanos.Checked = false;
-            rdbNenhum.Checked = false;
-            rdbSim.Checked = false;
-            rdbNao.Checked = false;
-            rdbRapida.Checked = false;
-            rdbEconomica.Checked = false;
-            rdbPadrao.Checked = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Verificando... \nCaso os campos não estiverem preenchidos corretamente a verificação não se concluirá! Caso contrário aguarde.", "Alerta");
+
+            if (txtNumpeca.Text == "")
+            {
+
+                erp1.SetError(txtNumpeca, "Número de Peças Obrigatório");
+
+                txtNumpeca.BackColor = Color.FromArgb(252, 3, 3);
+            }
+
+
+           else
+            {
+                erp1.SetError(txtNumpeca, "");
+
+                txtNumpeca.BackColor = Color.FromName("Window");
+
+            }
+
+            //if (pnlModo.Text == "")
+            //{
+
+              //  erp1.SetError(pnlModo, "Modo Obrigatório");
+
+               // pnlModo.BackColor = Color.FromArgb(252, 3, 3);
+            //}
+
+            //else
+            //{
+              //  erp1.SetError(pnlModo, "");
+
+              //  pnlModo.BackColor = Color.FromName("Window");
+
+            //}
+
+            if (cmbTipo.Text == "")
+            {
+
+                erp1.SetError(cmbTipo, "Tipos de Roupas Obrigatório");
+
+                cmbTipo.BackColor = Color.FromArgb(252, 3, 3);
+            }
+
+            else
+            {
+                erp1.SetError(cmbTipo, "");
+
+                cmbTipo.BackColor = Color.FromName("Window");
+
+            }
+
+            if (cmbRoupa.Text == "")
+            {
+
+                erp1.SetError(cmbRoupa, "Classificação de Roupas Obrigatório");
+
+                cmbRoupa.BackColor = Color.FromArgb(252, 3, 3);
+            }
+
+            else
+            {
+                erp1.SetError(cmbRoupa, "");
+
+                cmbRoupa.BackColor = Color.FromName("Window");
+
+            }
+
+            //if ((rdbCama.Checked = false) || (rdbPanos.Checked = false) || (rdbNenhum.Checked = false))
+            //{
+              //  erp1.SetError(panel2, "Opção Obrigatória");
+              //  panel2.BackColor = Color.FromArgb(252, 3, 3);
+            //}
+
+            //else if ((rdbCama.Checked = true) || (rdbPanos.Checked = true) || (rdbNenhum.Checked = true))
+            //{
+               // erp1.SetError(panel2, "");
+               // panel2.BackColor = Color.FromName("Window");
+            //}
+        }
+
     }
 }
+
+
+
+
+
+
+
+
+
