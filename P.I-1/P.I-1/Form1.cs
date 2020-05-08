@@ -58,10 +58,6 @@ namespace P.I_1
             rdbEconomica.Checked = false;
             rdbPadrao.Checked = false;
 
-
-
-
-
         }
 
         private void picAcc_Click(object sender, EventArgs e)
@@ -76,6 +72,9 @@ namespace P.I_1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show("Verificando... \nCaso os campos não estiverem preenchidos corretamente a verificação não se concluirá! Caso contrário aguarde.", "Alerta");
+
             if (txtNumpeca.Text == "")
             {
 
@@ -85,31 +84,30 @@ namespace P.I_1
             }
 
 
-            else
+           else
             {
                 erp1.SetError(txtNumpeca, "");
 
                 txtNumpeca.BackColor = Color.FromName("Window");
 
-
-            }
-            if (pnlModo.Text == "")
-            {
-
-                erp1.SetError(pnlModo, "Modo Obrigatório");
-
-                pnlModo.BackColor = Color.FromArgb(252, 3, 3);
             }
 
+            //if (pnlModo.Text == "")
+            //{
 
-            else
-            {
-                erp1.SetError(pnlModo, "");
+              //  erp1.SetError(pnlModo, "Modo Obrigatório");
 
-                pnlModo.BackColor = Color.FromName("Window");
+               // pnlModo.BackColor = Color.FromArgb(252, 3, 3);
+            //}
 
+            //else
+            //{
+              //  erp1.SetError(pnlModo, "");
 
-            }
+              //  pnlModo.BackColor = Color.FromName("Window");
+
+            //}
+
             if (cmbTipo.Text == "")
             {
 
@@ -118,15 +116,14 @@ namespace P.I_1
                 cmbTipo.BackColor = Color.FromArgb(252, 3, 3);
             }
 
-
             else
             {
                 erp1.SetError(cmbTipo, "");
 
                 cmbTipo.BackColor = Color.FromName("Window");
 
-
             }
+
             if (cmbRoupa.Text == "")
             {
 
@@ -135,32 +132,25 @@ namespace P.I_1
                 cmbRoupa.BackColor = Color.FromArgb(252, 3, 3);
             }
 
-
             else
             {
                 erp1.SetError(cmbRoupa, "");
 
                 cmbRoupa.BackColor = Color.FromName("Window");
 
-
-            }
-            if (panel2.Text == "")
-            {
-
-                erp1.SetError(panel2, "Opção Obrigatória");
-
-                panel2.BackColor = Color.FromArgb(252, 3, 3);
             }
 
+            //if ((rdbCama.Checked = false) || (rdbPanos.Checked = false) || (rdbNenhum.Checked = false))
+            //{
+              //  erp1.SetError(panel2, "Opção Obrigatória");
+              //  panel2.BackColor = Color.FromArgb(252, 3, 3);
+            //}
 
-            else
-            {
-                erp1.SetError(panel2, "");
-
-                panel2.BackColor = Color.FromName("Window");
-
-
-            }
+            //else if ((rdbCama.Checked = true) || (rdbPanos.Checked = true) || (rdbNenhum.Checked = true))
+            //{
+               // erp1.SetError(panel2, "");
+               // panel2.BackColor = Color.FromName("Window");
+            //}
         }
 
     }
