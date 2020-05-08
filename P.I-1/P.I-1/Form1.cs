@@ -58,10 +58,6 @@ namespace P.I_1
             rdbEconomica.Checked = false;
             rdbPadrao.Checked = false;
 
-
-
-
-
         }
 
         private void picAcc_Click(object sender, EventArgs e)
@@ -76,6 +72,9 @@ namespace P.I_1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            MessageBox.Show("Verificando... \nCaso os campos não estiverem preenchidos corretamente a verificação não se concluirá! Caso contrário aguarde.", "Alerta");
+
             if (txtNumpeca.Text == "")
             {
 
@@ -85,31 +84,26 @@ namespace P.I_1
             }
 
 
-            else
-            {
-                erp1.SetError(txtNumpeca, "");
-
-                txtNumpeca.BackColor = Color.FromName("Window");
-
+            
 
             }
-            if (pnlModo.Text == "")
-            {
 
-                erp1.SetError(pnlModo, "Modo Obrigatório");
+            //if (pnlModo.Text == "")
+            //{
 
-                pnlModo.BackColor = Color.FromArgb(252, 3, 3);
-            }
+              //  erp1.SetError(pnlModo, "Modo Obrigatório");
 
+               // pnlModo.BackColor = Color.FromArgb(252, 3, 3);
+            //}
 
-            else
-            {
-                erp1.SetError(pnlModo, "");
+            //else
+            //{
+              //  erp1.SetError(pnlModo, "");
 
-                pnlModo.BackColor = Color.FromName("Window");
+              //  pnlModo.BackColor = Color.FromName("Window");
 
+            //}
 
-            }
             if (cmbTipo.Text == "")
             {
 
@@ -118,59 +112,17 @@ namespace P.I_1
                 cmbTipo.BackColor = Color.FromArgb(252, 3, 3);
             }
 
-
             else
             {
                 erp1.SetError(cmbTipo, "");
 
                 cmbTipo.BackColor = Color.FromName("Window");
 
-
             }
+
             if (cmbRoupa.Text == "")
             {
 
-                erp1.SetError(cmbRoupa, "Classificação de Roupas Obrigatório");
-
-                cmbRoupa.BackColor = Color.FromArgb(252, 3, 3);
-            }
-
-
-            else
-            {
-                erp1.SetError(cmbRoupa, "");
-
-                cmbRoupa.BackColor = Color.FromName("Window");
-
-
-            }
-            if (panel2.Text == "")
-            {
-
-                erp1.SetError(panel2, "Opção Obrigatória");
-
-                panel2.BackColor = Color.FromArgb(252, 3, 3);
-            }
-
-
-            else
-            {
-                erp1.SetError(panel2, "");
-
-                panel2.BackColor = Color.FromName("Window");
-
-
-            }
         }
-
     }
 }
-
-
-
-
-
-
-
-
-
