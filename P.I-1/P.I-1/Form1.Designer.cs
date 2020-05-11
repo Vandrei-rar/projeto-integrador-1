@@ -43,10 +43,10 @@
             this.rdbPanos = new System.Windows.Forms.RadioButton();
             this.rdbNenhum = new System.Windows.Forms.RadioButton();
             this.pnlModo = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlEnxague = new System.Windows.Forms.Panel();
             this.rdbNao = new System.Windows.Forms.RadioButton();
             this.rdbSim = new System.Windows.Forms.RadioButton();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlMExec = new System.Windows.Forms.Panel();
             this.rdbPadrao = new System.Windows.Forms.RadioButton();
             this.rdbEconomica = new System.Windows.Forms.RadioButton();
             this.rdbRapida = new System.Windows.Forms.RadioButton();
@@ -63,8 +63,8 @@
             this.erp1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimizar)).BeginInit();
             this.pnlModo.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlEnxague.SuspendLayout();
+            this.pnlMExec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -105,7 +105,7 @@
             this.txtNumpeca.Multiline = true;
             this.txtNumpeca.Name = "txtNumpeca";
             this.txtNumpeca.Size = new System.Drawing.Size(100, 20);
-            this.txtNumpeca.TabIndex = 4;
+            this.txtNumpeca.TabIndex = 0;
             // 
             // label3
             // 
@@ -163,7 +163,7 @@
             this.cmbRoupa.Location = new System.Drawing.Point(227, 248);
             this.cmbRoupa.Name = "cmbRoupa";
             this.cmbRoupa.Size = new System.Drawing.Size(100, 21);
-            this.cmbRoupa.TabIndex = 12;
+            this.cmbRoupa.TabIndex = 2;
             // 
             // cmbTipo
             // 
@@ -182,16 +182,16 @@
             this.cmbTipo.Location = new System.Drawing.Point(227, 195);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(100, 21);
-            this.cmbTipo.TabIndex = 13;
+            this.cmbTipo.TabIndex = 1;
             // 
             // rdbCama
             // 
             this.rdbCama.AutoSize = true;
             this.rdbCama.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbCama.Location = new System.Drawing.Point(3, 3);
+            this.rdbCama.Location = new System.Drawing.Point(3, 5);
             this.rdbCama.Name = "rdbCama";
             this.rdbCama.Size = new System.Drawing.Size(103, 18);
-            this.rdbCama.TabIndex = 14;
+            this.rdbCama.TabIndex = 3;
             this.rdbCama.TabStop = true;
             this.rdbCama.Text = "Cama e Banho";
             this.rdbCama.UseVisualStyleBackColor = true;
@@ -200,10 +200,10 @@
             // 
             this.rdbPanos.AutoSize = true;
             this.rdbPanos.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbPanos.Location = new System.Drawing.Point(3, 26);
+            this.rdbPanos.Location = new System.Drawing.Point(3, 27);
             this.rdbPanos.Name = "rdbPanos";
             this.rdbPanos.Size = new System.Drawing.Size(126, 18);
-            this.rdbPanos.TabIndex = 15;
+            this.rdbPanos.TabIndex = 4;
             this.rdbPanos.TabStop = true;
             this.rdbPanos.Text = "Panos de Limpeza";
             this.rdbPanos.UseVisualStyleBackColor = true;
@@ -215,7 +215,7 @@
             this.rdbNenhum.Location = new System.Drawing.Point(3, 49);
             this.rdbNenhum.Name = "rdbNenhum";
             this.rdbNenhum.Size = new System.Drawing.Size(85, 18);
-            this.rdbNenhum.TabIndex = 16;
+            this.rdbNenhum.TabIndex = 5;
             this.rdbNenhum.TabStop = true;
             this.rdbNenhum.Text = "Nenhum(a)";
             this.rdbNenhum.UseVisualStyleBackColor = true;
@@ -232,15 +232,15 @@
             this.pnlModo.TabIndex = 17;
             this.pnlModo.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // pnlEnxague
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.rdbNao);
-            this.panel2.Controls.Add(this.rdbSim);
-            this.panel2.Location = new System.Drawing.Point(414, 146);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(112, 26);
-            this.panel2.TabIndex = 18;
+            this.pnlEnxague.BackColor = System.Drawing.Color.Transparent;
+            this.pnlEnxague.Controls.Add(this.rdbNao);
+            this.pnlEnxague.Controls.Add(this.rdbSim);
+            this.pnlEnxague.Location = new System.Drawing.Point(414, 146);
+            this.pnlEnxague.Name = "pnlEnxague";
+            this.pnlEnxague.Size = new System.Drawing.Size(112, 26);
+            this.pnlEnxague.TabIndex = 18;
             // 
             // rdbNao
             // 
@@ -249,7 +249,7 @@
             this.rdbNao.Location = new System.Drawing.Point(62, 3);
             this.rdbNao.Name = "rdbNao";
             this.rdbNao.Size = new System.Drawing.Size(45, 18);
-            this.rdbNao.TabIndex = 21;
+            this.rdbNao.TabIndex = 7;
             this.rdbNao.TabStop = true;
             this.rdbNao.Text = "Não";
             this.rdbNao.UseVisualStyleBackColor = true;
@@ -262,21 +262,21 @@
             this.rdbSim.Location = new System.Drawing.Point(3, 3);
             this.rdbSim.Name = "rdbSim";
             this.rdbSim.Size = new System.Drawing.Size(46, 18);
-            this.rdbSim.TabIndex = 20;
+            this.rdbSim.TabIndex = 6;
             this.rdbSim.TabStop = true;
             this.rdbSim.Text = "Sim";
             this.rdbSim.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // pnlMExec
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.rdbPadrao);
-            this.panel3.Controls.Add(this.rdbEconomica);
-            this.panel3.Controls.Add(this.rdbRapida);
-            this.panel3.Location = new System.Drawing.Point(414, 213);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(138, 72);
-            this.panel3.TabIndex = 19;
+            this.pnlMExec.BackColor = System.Drawing.Color.Transparent;
+            this.pnlMExec.Controls.Add(this.rdbPadrao);
+            this.pnlMExec.Controls.Add(this.rdbEconomica);
+            this.pnlMExec.Controls.Add(this.rdbRapida);
+            this.pnlMExec.Location = new System.Drawing.Point(414, 213);
+            this.pnlMExec.Name = "pnlMExec";
+            this.pnlMExec.Size = new System.Drawing.Size(138, 72);
+            this.pnlMExec.TabIndex = 19;
             // 
             // rdbPadrao
             // 
@@ -285,7 +285,7 @@
             this.rdbPadrao.Location = new System.Drawing.Point(3, 49);
             this.rdbPadrao.Name = "rdbPadrao";
             this.rdbPadrao.Size = new System.Drawing.Size(116, 18);
-            this.rdbPadrao.TabIndex = 24;
+            this.rdbPadrao.TabIndex = 10;
             this.rdbPadrao.TabStop = true;
             this.rdbPadrao.Text = "Lavagem Padrão";
             this.rdbPadrao.UseVisualStyleBackColor = true;
@@ -297,7 +297,7 @@
             this.rdbEconomica.Location = new System.Drawing.Point(3, 26);
             this.rdbEconomica.Name = "rdbEconomica";
             this.rdbEconomica.Size = new System.Drawing.Size(137, 18);
-            this.rdbEconomica.TabIndex = 23;
+            this.rdbEconomica.TabIndex = 9;
             this.rdbEconomica.TabStop = true;
             this.rdbEconomica.Text = "Lavagem Ecônomica";
             this.rdbEconomica.UseVisualStyleBackColor = true;
@@ -309,7 +309,7 @@
             this.rdbRapida.Location = new System.Drawing.Point(3, 3);
             this.rdbRapida.Name = "rdbRapida";
             this.rdbRapida.Size = new System.Drawing.Size(114, 18);
-            this.rdbRapida.TabIndex = 22;
+            this.rdbRapida.TabIndex = 8;
             this.rdbRapida.TabStop = true;
             this.rdbRapida.Text = "Lavagem Rápida";
             this.rdbRapida.UseVisualStyleBackColor = true;
@@ -391,7 +391,7 @@
             this.picReset.BackColor = System.Drawing.Color.Transparent;
             this.picReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picReset.Image = global::P.I_1.Properties.Resources.refresh_yellow;
-            this.picReset.Location = new System.Drawing.Point(414, 307);
+            this.picReset.Location = new System.Drawing.Point(411, 307);
             this.picReset.Name = "picReset";
             this.picReset.Size = new System.Drawing.Size(64, 64);
             this.picReset.TabIndex = 28;
@@ -422,7 +422,7 @@
             this.button1.Location = new System.Drawing.Point(501, 307);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(64, 64);
-            this.button1.TabIndex = 30;
+            this.button1.TabIndex = 11;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -446,8 +446,8 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlMExec);
+            this.Controls.Add(this.pnlEnxague);
             this.Controls.Add(this.pnlModo);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.cmbRoupa);
@@ -466,10 +466,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMinimizar)).EndInit();
             this.pnlModo.ResumeLayout(false);
             this.pnlModo.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlEnxague.ResumeLayout(false);
+            this.pnlEnxague.PerformLayout();
+            this.pnlMExec.ResumeLayout(false);
+            this.pnlMExec.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -497,10 +497,10 @@
         private System.Windows.Forms.RadioButton rdbPanos;
         private System.Windows.Forms.RadioButton rdbNenhum;
         private System.Windows.Forms.Panel pnlModo;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlEnxague;
         private System.Windows.Forms.RadioButton rdbNao;
         private System.Windows.Forms.RadioButton rdbSim;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlMExec;
         private System.Windows.Forms.RadioButton rdbPadrao;
         private System.Windows.Forms.RadioButton rdbEconomica;
         private System.Windows.Forms.RadioButton rdbRapida;
